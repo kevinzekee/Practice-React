@@ -1,0 +1,26 @@
+.main-container{
+    display: flex;
+    min-width: 500px;
+    max-width: 500px;
+    border: 2px solid rgb(73, 73, 73);
+    align-content: center;
+    padding: 40px;
+    flex-direction: column;
+    border-radius: 8px;
+
+}
+
+.second-container{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin:0;
+    padding: 0;
+    gap: 12px;
+}
+
+.home-buttons{
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 30px;
+}
