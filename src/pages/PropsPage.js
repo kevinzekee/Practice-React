@@ -32,7 +32,7 @@ export default PropsPage;`
 function PropsPage(){
   return(
     <div className="main-container">
-      <h1>React Hooks: useState</h1>
+      <h1>Props in React</h1>
       <p>
         This is a basic way of implementing props in React. This is like passing a variable in a function when it is being called (It is technically a function under the hood), only this time, you are calling a 
         <strong> React Component.</strong> Call the React Component <strong>"Welcome"</strong> and pass the <strong>'name'</strong> prop. In the Welcome function, make sure 
