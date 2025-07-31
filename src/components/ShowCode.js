@@ -1,20 +1,21 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-function ShowCode(props) {
+function ShowCode({ codeString }) {
   return (
-    <div style={{ maxWidth: '100%', overflowX: 'auto' }}>
+    <div style={{ width: '100%', overflowX: 'auto' }}>
       <SyntaxHighlighter
-        language='javascript'
+        language="javascript"
         style={oneDark}
-        wrapLongLines={true} // this helps with mobile
+        wrapLongLines={true}
         customStyle={{
-          borderRadius: '6px',
           fontSize: '0.9rem',
+          borderRadius: '6px',
           padding: '16px',
+          marginTop: '10px',
         }}
       >
-        {props.codeString}
+        {codeString}
       </SyntaxHighlighter>
     </div>
   );
