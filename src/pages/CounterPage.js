@@ -50,7 +50,7 @@ function CounterPage(){
                 </p>
                 <h4>Output: </h4>
                 <p>You have clicked the button <strong>{count}</strong> times!</p>
-                <button onClick={addCount}>Click Me!</button>
+                <button className='home-buttons' onClick={addCount}>Click Me!</button>
                 <br></br>
                 <h4>Code:</h4>
                 <ShowCode codeString={codeBlock}/>
