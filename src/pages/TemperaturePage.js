@@ -57,21 +57,22 @@ function TemperaturePage(){
 
     return(
         <div className='main-container'>
-            <h1>React Hooks: useState</h1>
-            <p>This is another application of useState.
-                In the code synatx of the TemperatureInput function, curly braces are used to initalize props of label, value and onChange.
-                onChange is an input attribute, it contains the "e" event object which calls the onChange function, which gets the value from e.target.value
-            </p>
-            <h4>Output:</h4>
-            <h5>Temp Converter</h5>
-            <TemperatureInput label='Celcius' value={temperature} onChange={setTemperature}/>
-            <p>Converted Temp is: {fahrenheit} °F</p>
-            
-            <h4>Code:</h4>
-            <ShowCode codeString = {codeBlock}/>
-            <br></br>
-            <HomeButton/>
-
+            <div className='second-container'>
+                <h1>React Hooks: useState</h1>
+                <p>This is another application of useState.
+                    In the code synatx of the TemperatureInput function, curly braces are used to initalize props of label, value and onChange.
+                    onChange is an input attribute, it contains the "e" event object which calls the onChange function, which gets the value from e.target.value
+                </p>
+                <h4>Output:</h4>
+                <h5>Temp Converter</h5>
+                <TemperatureInput label='Celcius' value={temperature} onChange={setTemperature}/>
+                <p>Converted Temp is: {fahrenheit} °F</p>
+                
+                <h4>Code:</h4>
+                <ShowCode codeString = {codeBlock}/>
+                <br></br>
+                <HomeButton/>
+            </div>
         </div>
     )
 }

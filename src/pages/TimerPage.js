@@ -40,18 +40,20 @@ function TimerPage() {
 
   return (
     <div className="main-container">
-      <h1>Timer</h1>
-      <p>This is a basic implementation of the useEffect Hook in React. useEffect is used for side effects. A side effect is an effect that happens outside a component,
-        unlike useState where it directly re-renders a component, useEffect only runs after a component render.
-      </p>
-      <h4>Output</h4>
-      <span>
-        {count.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2,})}{' '}seconds
-      </span>
-      <h4>Code: </h4>
-      <ShowCode codeString={codeBlock}/>
-      <br></br>
-      <HomeButton/>
+      <div className="second-container">
+        <h1>Timer</h1>
+        <p>This is a basic implementation of the useEffect Hook in React. useEffect is used for side effects. A side effect is an effect that happens outside a component,
+          unlike useState where it directly re-renders a component, useEffect only runs after a component render.
+        </p>
+        <h4>Output</h4>
+        <span>
+          {count.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2,})}{' '}seconds
+        </span>
+        <h4>Code: </h4>
+        <ShowCode codeString={codeBlock}/>
+        <br></br>
+        <HomeButton/>
+        </div>
     </div>
   );
 }
